@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'vegurlight';
+    src: url('vegur-light-webfont.woff2') format('woff2'),
+         url('vegur-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTDrugs-Thin';
+    src: url('TTDrugs-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, p, div {
+    margin: 0;
+    border: 1px solid black;
+}
+html {
+    min-height: 100%;
+}
+body{
+	padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica;
+    font-family: 'TTDrugs-Thin';
+	/*background-color: #91c5eb;*/
+    background: linear-gradient(to bottom, #57A7FF, #b700ff) no-repeat;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 60px;
+    text-shadow: 2px 2px 7px #D3D3D3;
+    min-width: 1000px;
+    text-align: center;
+    color: #fff;
+}
+
+#logo {
+    font-family: 'vegurlight';
+    font-size: 100%;
+}
+.info, a {
+    font-size: 50%;
+}
+.info {
+    margin-bottom: 30px;
+}
+.block {
+    display: block;
+}
