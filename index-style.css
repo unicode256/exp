@@ -11,9 +11,9 @@
     font-weight: normal;
     font-style: normal;
 }
-h1, p, div {
+h1, p, div, a {
     margin: 0;
-    border: 1px solid black;
+    /*border: 1px solid white;*/
 }
 html {
     min-height: 100%;
@@ -24,8 +24,7 @@ body{
     height: 100%;
     font-family: Helvetica;
     font-family: 'TTDrugs-Thin';
-	/*background-color: #91c5eb;*/
-    background: linear-gradient(to bottom, #57A7FF, #b700ff) no-repeat;
+    background: url('IMG_4032.jpeg') no-repeat center;
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,7 +38,16 @@ body{
 
 #logo {
     font-family: 'vegurlight';
-    font-size: 100%;
+    font-size: 140%;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    width: 70%;
 }
 .info, a {
     font-size: 50%;
@@ -47,6 +55,47 @@ body{
 .info {
     margin-bottom: 30px;
 }
-.block {
+.info1 {
+    margin-top: 50px;
+}
+.info1, .info2 {
+    font-size: 80%;
+}
+.info3 {
+    margin-top: 50px;
+    font-size: 60%;
+}
+.buttons {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    overflow: auto;
+    margin-top: 250px;
+}
+.button {
+    text-align: center;
     display: block;
+    float: left;
+    width: 49.3%;
+    margin: 0;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4d7cb3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 45%;
+    border-radius: 9px;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.button:hover {
+    background-color: #76a6de;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.button1 {
+    margin-right: 0.5%;
+}
+.button2 {
+    margin-left: 0.5%;
 }
