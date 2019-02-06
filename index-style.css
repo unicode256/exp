@@ -70,7 +70,7 @@ body{
     padding: 0;
     text-align: left;
     overflow: auto;
-    margin-top: 250px;
+    margin-top: 20%;
 }
 .button {
     text-align: center;
@@ -98,4 +98,11 @@ body{
 }
 .button2 {
     margin-left: 0.5%;
+}
+.footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
