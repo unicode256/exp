@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'vegurlight';
+    src: url('vegur-light-webfont.woff2') format('woff2'),
+         url('vegur-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTDrugs-Thin';
+    src: url('TTDrugs-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, p, div, form, a {
+    margin: 0;
+    /*border: 1px solid white;*/
+}
+.footer, .fbuttons, .fbutton {
+    /*border: 1px solid white;*/
+}
+input {
+    margin: 0;
+}
+html {
+    min-height: 100%;
+}
+body{
+	padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Helvetica;
+    font-family: 'TTDrugs-Thin';
+    background-color: #000;
+    background: url('IMG_4039.JPG') no-repeat right;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 60px;
+    text-shadow: 2px 2px 7px #D3D3D3;
+    min-width: 1000px;
+    text-align: center;
+    color: #fff;
+}
+form {
+    width: 100%;
+}
+#bottom_line {
+    font-size: 70%;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    min-width: 1200px;
+    overflow: auto;
+}
+#leftside, #rightside {
+    width: 48.63%;
+}
+#leftside {
+    border-right: 1px solid #fff;
+    float: left;
+    padding-right: 1.25%;
+}
+#rightside {
+    float: left;
+    padding-left: 1.2%;
+}
+.label, select, input[name="male"], input[name="female"] {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 50%;
+}
+p, input {
+    font-size: 50%;
+    color: #fff;
+}
+input {
+    font-family: 'TTDrugs-Thin';
+    margin: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 99.4%;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 17px;
+    margin-bottom: 30px;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+input[name="male"], input[name="female"]{
+    width: 49.15%;
+    transition-property: background-color;
+    display: block;
+    float: left;
+    transition-duration: .3s;
+    margin-bottom: 0;
+}
+input[name="male"]:hover, input[name="female"]:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+input[name="submit"]{
+    background-color: #4d7cb3;
+    border: none;
+    margin-top: 53px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 9px;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: .3s;
+    margin-bottom: 0;
+}
+input[name="submit"]:hover {
+    background-color: #76a6de;
+    transition-property: background-color;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+input:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+select {
+    display: block;
+    float: left;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: 'TTDrugs-Thin';
+    width: 32.23%;
+    color: #fff;
+    font-size: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	padding-left: 10px;
+    background-color: rgba(255,255,255,0.15);
+    border: 2px solid #fff;
+	border-radius: 9px;
+    margin-top: 17px;
+    margin-bottom: 30px;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+select[name="birth_day"]{
+    
+}
+.margin_left {
+    margin-left: 1.65%;
+}
+input[name="female"]{
+    margin-left: 1.7%;
+}
+select:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.footer {
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 900px;
+}
+.fbuttons {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+.fbutton1 {
+    width: 226px;
+}
+.fbutton2 {
+    width: 219px;
+}
+.fbutton3 {
+    width: 145px;
+}
+.fbutton {
+    display: block;
+    text-align: left;
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.fbutton:hover {
+    color: #bababa;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.fbutton2, .fbutton3 {
+    margin-left: 102px;
+}
+@media (max-height: 900px){
+    .footer {
+        position: static;
+        margin-top: 6%;
+    }
+}
+@media (max-width: 1200px){
+    body {
+        background-position: left;
+    }
+}
