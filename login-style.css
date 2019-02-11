@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'vegurlight';
+    src: url('../fonts/vegur-light-webfont.woff2') format('woff2'),
+         url('vegur-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTDrugs-Thin';
+    src: url('TTDrugs-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+h1, p, div, form, img, input[type="checkbox"], label, .fbutton, a {
+    margin: 0;
+    border: 1px solid white;
+}
+html {
+    min-height: 100%;
+}
+body{
+	padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: Helvetica;
+    font-family: 'TTDrugs-Thin';
+    /*background: url('../images/IMG_4039.JPG');*/
+    background-color: #000;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover; 
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 60px;
+    text-shadow: 2px 2px 7px #D3D3D3;
+    min-width: 1000px;
+    text-align: center;
+    color: #fff;
+}
+img {
+    margin: 0;
+}
+.checkbox {
+    overflow: auto;
+}
+/*label {
+    background-image: url('checkbox.png');
+    background-repeat: no-repeat;
+
+}*/
+label {
+    display: block;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="checkbox"]{
+    display: none;
+}
+input[type="checkbox"] + label{
+    cursor: pointer;
+    font-size: 50%;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 8px 0 0;
+    border-radius: 4px;
+    background-image: url('checkbox.png');
+    background-repeat: no-repeat;
+}
+
+input[type="checkbox"] + label::before {
+    background-position: 0px 0px;    
+}
+input[type="checkbox"]:checked + label::before {
+    background-position-x: -40px;
+}
+input[type="checkbox"]:disabled + label::before {
+    background-position: 0px 0px;
+}
+input[type="checkbox"]:hover + label {
+    background-position-x: -20px;
+}
+#bottom_line {
+    padding-bottom: 30px;
+    margin-bottom: 8%;
+    font-size: 65%;
+    border-bottom: 1px solid #fff;
+}
+#logo {
+    font-family: 'vegurlight';
+    font-size: 140%;
+    margin-bottom: 10px;
+
+}
+#main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    min-width: 650px;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+a {
+    font-size: 50%;
+}
+a[href="/restore"]{
+    display: block;
+    text-decoration: underline;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+a[href="/restore"]:hover{
+    display: block;
+    text-decoration: none;
+}
+p, input {
+    font-size: 50%;
+    color: #fff;
+}
+p {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+}
+input {
+    font-family: 'TTDrugs-Thin';
+    outline: none;
+    margin: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 99.4%;
+    border: 2px solid #fff;
+    border-radius: 9px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+input[type="password"]{
+    margin-bottom: 20px;
+}
+input[type="submit"]{
+    background-color: #4d7cb3;
+    border: none;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    width: 100%;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+input[type="submit"]:hover {
+    background-color: #76a6de;
+    transition-property: background-color;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+.checkbox {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+}
+input:focus {
+    background-color: rgba(255, 255, 255, 0.4);
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+.footer {
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    margin-top: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 900px;
+}
+.fbuttons {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+.fbutton1 {
+    width: 226px;
+}
+.fbutton2 {
+    width: 219px;
+}
+.fbutton3 {
+    width: 145px;
+}
+.fbutton {
+    display: block;
+    text-align: left;
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.fbutton:hover {
+    color: #bababa;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.fbutton2, .fbutton3 {
+    margin-left: 11%;
+}
+@media (max-height: 900px){
+    .footer {
+        position: static;
+        margin-top: 6%;
+    }
+}
+@media (max-width: 1200px){
+    body {
+        background-position: left;
+    }
+}
