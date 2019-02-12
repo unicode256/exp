@@ -11,7 +11,7 @@
     font-weight: normal;
     font-style: normal;
 }
-h1, p, div, form, a {
+h1, p, div, form, a, input[type="radio"], label {
     margin: 0;
     /*border: 1px solid white;*/
 }
@@ -99,19 +99,19 @@ input {
     transition-property: background-color;
     transition-duration: .3s;
 }
-input[name="male"], input[name="female"]{
+/*input[name="male"], input[name="female"]{
     width: 49.15%;
     transition-property: background-color;
     display: block;
     float: left;
     transition-duration: .3s;
     margin-bottom: 0;
-}
-input[name="male"]:hover, input[name="female"]:hover{
+}*/
+/*input[name="male"]:hover, input[name="female"]:hover{
     background-color: rgba(255, 255, 255, 0.4);
     transition-property: background-color;
     transition-duration: .3s;
-}
+}*/
 input[name="submit"]{
     background-color: #4d7cb3;
     border: none;
@@ -156,19 +156,54 @@ select {
     transition-property: background-color;
     transition-duration: .3s;
 }
-select[name="birth_day"]{
-    
-}
+
 .margin_left {
     margin-left: 1.65%;
 }
-input[name="female"]{
-    margin-left: 1.7%;
-}
+
 select:hover {
     background-color: rgba(255, 255, 255, 0.4);
     transition-property: background-color;
     transition-duration: .3s;
+}
+label {
+    display: block;
+    width: 48.98%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgba(255,255,255,0.15);
+    border: 2px solid #fff;
+    margin-top: 17px;
+    border-radius: 9px;
+}
+input[type="radio"] {
+    display: none;    
+}
+
+input[type="radio"] + label {
+  font-size: 50%;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="radio"] + label::before {
+    content: "";
+    display: block;
+}
+
+input[type="radio"] + label {
+    background-color: rgba(255,255,255,0.15);
+}
+input[type="radio"]:checked + label {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+input[type="radio"]:disabled:hover + label:hover{
+    background-color: rgba(255,255,255,0.15);
+}
+label[for="female"]{
+    box-sizing: border;
+    margin-left: 1%;
 }
 .footer {
     /*background-color: rgba(0, 0, 0, 0.8);*/
