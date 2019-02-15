@@ -168,7 +168,7 @@ select:hover {
 }
 label {
     display: block;
-    width: 48.98%;
+    width: 48.5%;
     float: left;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -200,10 +200,6 @@ input[type="radio"]:checked + label {
 
 input[type="radio"]:disabled:hover + label:hover{
     background-color: rgba(255,255,255,0.15);
-}
-label[for="female"]{
-    box-sizing: border;
-    margin-left: 1%;
 }
 .footer {
     /*background-color: rgba(0, 0, 0, 0.8);*/
@@ -237,6 +233,12 @@ label[for="female"]{
     margin-bottom: 4%;
     transition-property: color;
     transition-duration: .2s;
+}
+.radiobox {
+    overflow: auto;
+}
+label[for="female"] {
+    float: right;
 }
 .fbutton:hover {
     color: #bababa;
