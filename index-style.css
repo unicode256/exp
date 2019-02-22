@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'vegurlight';
     src: url('vegur-light-webfont.woff2') format('woff2'),
-         url('vegur-light-webfont.woff') format('woff');
+         url('../fonts/vegur-light-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -24,23 +24,35 @@ body{
     height: 100%;
     font-family: Helvetica;
     font-family: 'TTDrugs-Thin';
-    background: url('IMG_4032.jpeg') no-repeat center;
+    background-color: #000;
+    background: url('IMG_4039.JPG');
+    /*background: filter(url('../images/IMG_4039.JPG'), blur(5px));*/
+    background-position: center;
+    background-repeat: no-repeat;
     -webkit-background-size: cover; 
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-size: 60px;
-    text-shadow: 2px 2px 7px #D3D3D3;
     min-width: 1000px;
     text-align: center;
     color: #fff;
 }
+.js_hidden {
+    display: none;
+}
+.js_show {
+    display: block;
+}
 
+p {
+    text-shadow: black 1px 1px 0, black -1px -1px 0, black -1px 1px 0, black 1px -1px 0;
+}
 #logo {
     font-family: 'vegurlight';
     font-size: 140%;
     margin-bottom: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
     border-bottom: 1px solid #fff;
 }
 #main {
@@ -48,6 +60,12 @@ body{
     margin-right: auto;
     margin-top: 2%;
     width: 70%;
+    min-width: 1000px;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
 }
 .info, a {
     font-size: 50%;
@@ -67,10 +85,15 @@ body{
 }
 .buttons {
     width: 100%;
+    min-width: 1000px;
     padding: 0;
     text-align: left;
     overflow: auto;
-    margin-top: 20%;
+    margin-top: 150px;
+    /*position: absolute;*/
+    margin-left: auto;
+    margin-right: auto;
+    /*bottom: 150px;*/
 }
 .button {
     text-align: center;
@@ -83,7 +106,7 @@ body{
     background-color: #4d7cb3;
     padding-top: 15px;
     padding-bottom: 15px;
-    font-size: 45%;
+    font-size: 50%;
     border-radius: 9px;
     transition-property: background-color;
     transition-duration: .3s;
@@ -100,9 +123,54 @@ body{
     margin-left: 0.5%;
 }
 .footer {
-    background-color: rgba(0, 0, 0, 0.8);
+    /*background-color: rgba(0, 0, 0, 0.8);*/
+    background-color: rgba(255, 255, 255, 0.15);
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
+    min-width: 900px;
+}
+.fbuttons {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+.fbutton1 {
+    width: 226px;
+}
+.fbutton2 {
+    width: 219px;
+}
+.fbutton3 {
+    width: 145px;
+}
+.fbutton {
+    display: block;
+    text-align: left;
+    float: left;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.fbutton:hover {
+    color: #bababa;
+    transition-property: color;
+    transition-duration: .2s;
+}
+.fbutton2, .fbutton3 {
+    margin-left: 11%;
+}
+@media (max-height: 900px){
+    .footer {
+        position: static;
+        margin-top: 6%;
+    }
+}
+@media (max-width: 1200px){
+    body {
+        background-position: left;
+    }
 }
