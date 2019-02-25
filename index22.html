@@ -6,7 +6,25 @@
             
         </head>
         <body>
-        <noscript><p>Ваш браузер не поддерживает скрипты</p></noscript>
+        <noscript><p>В вашем браузере выключена поддержка JavaScript</p></noscript>
+        <div class="login">
+            <h1 id="login_logo">ANTIDATING</h1>
+            <p id="bottom_line">Вход в учётную запись</p>
+            <p class="label">Введите ваш адрес эл. почты:</p>
+            <input type="text" name="email" id="email">
+            <p class="label">Введите ваш пароль:</p>
+            <input type="password" name="password" id="password"><br />
+            <input onclick="post_query('logintest', 'login', 'email.password')" id="submit" type="submit" name="submit" value="Войти">
+            <div class="checkbox">
+                <input id="remember" type="checkbox" name="remember">
+                <label for="remember">Запомнить меня</label>
+            </div>
+            <a href="/restore">Я забыл(а) свой пароль</a>
+            <!--<span id="error"></span-->
+        </div>
+        <div class="registration">
+
+        </div>
         <div id="main" class="js_hidden">
         <div>
     <h1 id="logo"><img src="WhiteLogo.png" alt="ANTIDATING"></h1>
